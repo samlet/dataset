@@ -1,0 +1,17 @@
+# -T c   -- generate cutomers dimension table ONLY
+# -T p   -- generate parts dimension table ONLY
+# -T s   -- generate suppliers dimension table ONLY
+# -T d   -- generate date dimension table ONLY
+# -T l   -- generate lineorder fact table ONLY
+gen:
+    rm *.tbl
+    ./dbgen -f -s 10 -T c
+    ./dbgen -f -s 10 -T p
+    ./dbgen -f -s 10 -T s
+    ./dbgen -f -s 10 -T d
+    ./dbgen -f -s 1 -T l
+    ls -alh *.tbl
+
+build:
+    make dbgen
+    
