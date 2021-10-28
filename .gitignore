@@ -3,7 +3,9 @@ pp-*.csv
 Data/
 geo-region-coords-master/
 dataset/
+geo-sql/
 
 
 
 
+/.idea/
