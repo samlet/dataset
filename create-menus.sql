@@ -1,3 +1,4 @@
+-- $ clickhouse-client --queries-file create-menus.sql 
 CREATE TABLE dish
 (
     id UInt32,

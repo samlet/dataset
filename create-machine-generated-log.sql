@@ -1,3 +1,4 @@
+-- $ clickhouse-client --queries-file create-machine-generated-log.sql
 CREATE DATABASE mgbench;
 
 
